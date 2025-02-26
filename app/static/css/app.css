@@ -1,3 +1,73 @@
-body {
-    padding-top: 5rem;
+.profile-container {
+    max-width: 500px;
+    margin: 80px auto; 
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-header {
+    background: #f8d7da; /* Light pink */
+    color: #76554a; /* Brown */
+    padding: 30px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-header h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 2px 0;
+}
+
+.bio {
+    background: #76554a; /* Brownish-pink */
+    color: #f8d7da; /* Light pink text */
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.stats ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.stats li {
+    text-align: center;
+    color: #777; /* Grey color */
+}
+
+.val {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+.follow-btn {
+    background: #f8d7da; /* Light pink */
+    color: #76554a; /* Brownish-pink */
+    border: none;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }

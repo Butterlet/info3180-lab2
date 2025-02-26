@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section class="profile-container">
+    <!-- Pink Header Section -->
+    <div class="profile-header">
+        <img src="{{ url_for('static', filename='Paris.jpg') }}" alt="Profile Picture">
+        <h1>Paris Wolfe</h1>
+        <h4>@withloveparis</h4>
+        <h4>Kingston, Jamaica</h4>
+        <h4>{{ user.date_joined }}</h4>
+    </div>
+
+    <!-- Bio Section -->
+    <p class="bio">
+        Hello<3, I'm Paris and I love cats and the color pink. Additionally, I enjoy designing websites and drawing. 
+        If you'd like to work together, please contact me!
+    </p>
+
+    <!-- White Section (Stats & Follow Button) -->
+    <div class="profile-details">
+        <!-- Stats (Centered) -->
+        <div class="stats">
+            <ul>
+                <li>
+                    <p class="val">{{ user.posts }}</p>
+                    <p class="name">Posts</p>
+                </li>
+                <li>
+                    <p class="val">{{ user.following }}</p>
+                    <p class="name">Following</p>
+                </li>
+                <li>
+                    <p class="val">{{ user.followers }}</p>
+                    <p class="name">Followers</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Follow Button -->
+        <button class="follow-btn">Follow</button>
+    </div>
+</section>
+{% endblock %}
