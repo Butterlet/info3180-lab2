@@ -52,12 +52,12 @@ def format_date_joined(date):
 @app.route('/profile')
 def profile():
     user = {
-        "full_name": "Mary Jane",
-        "username": "mjane",
+        "full_name": "Paris Wolfe",
+        "username": "withloveparis",
         "location": "Kingston, Jamaica",
         "date_joined": format_date_joined(datetime.date(2019, 2, 7)),  # Pass a date
-        "bio": "I am a smart and talented young woman who loves website design and development. "
-               "Contact me if you'd like to work together on a new project.",
+        "bio": " Hello<3, I'm Paris and I love cats and the color pink. Additionally, I enjoy designing websites and drawing. "
+               "If you'd like to work together, please contact me!",
         "posts": 7,
         "following": 100,
         "followers": 250
